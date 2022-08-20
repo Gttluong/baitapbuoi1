@@ -33,13 +33,12 @@ body{
     display:flex;
     flex-direction:column;
     justify-content:start;
-    align-items:center;
 }
 
 .blockData #title{
     margin-top: 40px;
 
-    font-size:17px;
+    font-size:19px;
 
     display:flex;
     flex-direction:row;
@@ -48,8 +47,9 @@ body{
 .blockData #title::before{
     content: ' ';
 
-    width:7px;
+    width:10px;
     height:30px;
+    margin-left:85px;
     margin-right:10px;
 
     background:rgb(124, 66, 24);
