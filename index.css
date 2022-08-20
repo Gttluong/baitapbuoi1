@@ -1,0 +1,143 @@
+@font-face{
+    font-family: myFont;
+    src: url('font-family/DancingScript-VariableFont_wght.ttf')
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    width:100%;
+    height:100vh;
+    background-image:  url('image/nen.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.blockData{
+    width: 33%;
+    height: 100%;
+    padding:10px;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight:bolder;
+
+    color:white;
+    background:rgba(0, 0, 0, 0.61);
+
+    display:flex;
+    flex-direction:column;
+    justify-content:start;
+    align-items:center;
+}
+
+.blockData #title{
+    margin-top: 40px;
+
+    font-size:17px;
+
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+}
+.blockData #title::before{
+    content: ' ';
+
+    width:7px;
+    height:30px;
+    margin-right:10px;
+
+    background:rgb(124, 66, 24);
+}
+
+.blockData .main{
+    height:20%;
+    margin-top:20px;
+    margin-left:10px;
+
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.blockData .main .blockImg{
+    width: 30%;
+    height: 100%;
+    margin-right:20px;
+    border: 3px solid white;
+    border-radius: 50%;
+
+    background:white;
+    overflow:hidden;
+}
+.blockData .main .blockImg img{
+    width:100%;
+}
+
+.blockData .main .blockIntro{
+    width:60%;
+}
+.blockData .main .blockIntro .name{
+    font-size: 22px;
+}
+
+.blockData .main .blockIntro .icon{
+    margin:5px;
+}
+.blockData .main .blockIntro .icon svg{
+    margin:0 2px;
+
+    color:rgb(204, 164, 32);
+}
+.blockData .main .blockIntro .full::after{
+    font: var(--fa-font-solid);
+    content:'\f005';
+
+    margin:2px;
+
+    color:rgb(204, 164, 32);
+}
+.blockData .main .blockIntro .four::after{
+    font: var(--fa-font-regular);
+    content:'\f005';
+
+    margin:2px;
+
+    color:rgb(204, 164, 32);
+}
+
+.blockData .main .blockIntro .introduct{
+    font-size:14px;
+    font-style:italic;
+}
+.blockData .main .blockIntro .introduct p{
+    padding: 2px;
+}
+.blockData .main .blockIntro .introduct .properties{
+    color:rgb(204, 164, 32);
+}
+
+
+.blockText{
+    height: 50%;
+    margin: 30px 0 0 250px;
+
+    text-align: end;
+    text-transform:uppercase;
+
+    font-family:myFont;
+    font-size: 100px;
+    font-weight:bolder;
+
+    color:#B50E13;
+    rotate: 351deg;
+}
+.blockText #hello{
+    font-size: 60px;
+    text-align: start;
+}
